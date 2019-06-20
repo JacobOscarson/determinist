@@ -9,6 +9,8 @@ import fsm
 # Stopped = fsm.genstate('stopped')
 # Running = fsm.genstate('running')
 
+
+
 class Machine(fsm.FSM):
     @fsm.state('stopped')
     def start(self: 'Machine') -> str:
